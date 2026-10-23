@@ -442,7 +442,7 @@ Important: ThingSpeak channel IDs, read API keys, write API keys, and Wi-Fi cred
 📁 Project Directory Structure
 
 The repository contains the following source files, header files, and images.
-
+```
 project_major_ARM/
 │
 ├── ARM_c_files/
@@ -488,7 +488,7 @@ project_major_ARM/
     ├── Channel_1.jpg
     ├── Channel_2.jpg
     └── ![ThermoSet Connect](Images/Project_circuit_connections.jpg)
-
+```
 ---
 **Source Files**
 
