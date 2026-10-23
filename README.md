@@ -28,9 +28,6 @@ The system continuously measures room temperature, compares it against a configu
 - "Applications" (#-applications)
 - "Limitations and Future Improvements" (#-limitations-and-future-improvements)
 - "Learning Outcomes" (#-learning-outcomes)
-- "Author" (#-author)
-- "Acknowledgements" (#-acknowledgements)
-- "License" (#-license)
 
 ---
 
@@ -228,7 +225,7 @@ The project is divided into sensing, processing, user interaction, storage, aler
 
 The original project block diagram is available in the repository.
 
-"ThermoSet Block Diagram" (ARM_project_images/Block_diagram.jpg)
+![ThermoSet Connect](Images/Block_diagram.jpg)
 
 ---
 
@@ -249,7 +246,7 @@ LED| Visual temperature alert
 Power supply| Supplies the controller and connected modules
 Supporting components| Wiring, resistors, and interface circuitry as required
 
-Hardware note: Verify the exact controller variant, RTC hardware, LCD dimensions, and electrical connections against your physical circuit before reproducing the project.
+![ThermoSet Connect](Images/Project_circuit_connections.jpg)
 
 ---
 
@@ -490,7 +487,7 @@ project_major_ARM/
     ├── Channel_2.jpg
     └── Project_circuit_connections.jpg
 
-Important Source Files
+**Source Files**
 
 File| Responsibility
 "thermoset_main.c"| Main application loop, initialization, monitoring, alerts, and cloud scheduling
@@ -514,7 +511,7 @@ The corresponding header files provide function declarations, type definitions, 
 
 The following image is included with the project files.
 
-"ThermoSet Circuit Connections" (ARM_project_images/Project_circuit_connections.jpg)
+![ThermoSet Connect](Images/Project_circuit_connections.jpg)
 
 Interface Overview
 
@@ -538,32 +535,16 @@ Electrical compatibility: Check the controller's voltage requirements and the ES
 
 The following steps describe the main configuration requirements based on the project firmware.
 
-1. Clone the Repository
-
-After publishing the project on GitHub, clone it using:
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-
-Replace the placeholders with your actual GitHub username and repository name.
-
-Move into the project directory:
-
 cd YOUR_REPOSITORY
 
-2. Configure the Wi-Fi Credentials
-
-Open the ESP-01 configuration header:
-
-ARM_h_files/esp01_defines.h
-
-Configure the following values:
+1. Configure the Wi-Fi Credentials
 
 #define WIFI_SSID       "YOUR_WIFI_SSID"
 #define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
 
 Use a compatible Wi-Fi network and verify that the ESP-01 can connect successfully.
 
-3. Configure ThingSpeak
+2. Configure ThingSpeak
 
 In the same configuration file, provide the appropriate ThingSpeak channel IDs and API keys.
 
