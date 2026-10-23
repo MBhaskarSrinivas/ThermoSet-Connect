@@ -489,19 +489,20 @@ project_major_ARM/
 
 **Source Files**
 
-File| Responsibility
-"thermoset_main.c"| Main application loop, initialization, monitoring, alerts, and cloud scheduling
-"thermoset_fun_def.c"| Set-point management, configuration menu, Wi-Fi initialization, RTC utilities, and alert outputs
-"lm35.c"| Temperature acquisition and conversion
-"adc.c"| ADC initialization and analog input reading
-"esp01.c"| ESP8266 response handling and ThingSpeak read/write operations
-"i2c.c"| I²C communication routines
-"i2c_eeprom.c"| EEPROM byte, page, random-read, and sequential-read operations
-"rtc.c"| RTC initialization and time/date operations
-"lcd.c"| LCD driver functions
-"kpm.c"| Keypad scanning and numeric input
-"uart.c"| UART communication functions
-"delay.c"| Delay utilities
+|File| Responsibility|
+|---|---|
+|"thermoset_main.c"| Main application loop, initialization, monitoring, alerts, and cloud scheduling|
+|"thermoset_fun_def.c"| Set-point management, configuration menu, Wi-Fi initialization, RTC utilities, and alert outputs|
+|"lm35.c"| Temperature acquisition and conversion|
+|"adc.c"| ADC initialization and analog input reading|
+|"esp01.c"| ESP8266 response handling and ThingSpeak read/write operations|
+|"i2c.c"| I²C communication routines|
+|"i2c_eeprom.c"| EEPROM byte, page, random-read, and sequential-read operations|
+|"rtc.c"| RTC initialization and time/date operations|
+|"lcd.c"| LCD driver functions|
+|"kpm.c"| Keypad scanning and numeric input|
+|"uart.c"| UART communication functions|
+|"delay.c"| Delay utilities|
 
 The corresponding header files provide function declarations, type definitions, peripheral settings, and configuration constants.
 
@@ -669,19 +670,15 @@ The exact physical key mapping should be verified against the keypad driver and 
 
 1. Hardware and Circuit Connections
 
-
+![ThermoSet Connect](Images/Project_circuit_connections.jpg)
 
 2. ThingSpeak Temperature Monitoring
 
-
+![ThermoSet Connect](Images/Channel_1.jpg)
 
 3. ThingSpeak Second Channel
 
-
-
-4. System Block Diagram
-
-
+![ThermoSet Connect](Images/Channel_2.jpg)
 
 These images document the project circuit, system architecture, and ThingSpeak monitoring interface.
 
@@ -772,29 +769,3 @@ Embedded firmware modularization
 Local and remote configuration management
 
 Debugging embedded hardware and software
-
-👨‍💻 Author
-
-Your Name
-
-Embedded Systems | ARM Microcontrollers | Internet of Things
-
-GitHub: YOUR_GITHUB_USERNAME
-
-Replace the placeholders above with your own details before publishing.
-
-🙏 Acknowledgements
-
-This project was developed as an academic major project using embedded systems and IoT concepts.
-
-Thanks to everyone who contributed guidance, technical assistance, and support during the development and testing of the project.
-
-📄 License
-
-No license has been specified for this repository.
-
-If you intend to make the source code available for reuse, consider selecting an appropriate open-source license and adding the corresponding LICENSE file.
-
-Until a license is added, do not assume that others have permission to reuse, modify, or redistribute the code.
-
-
