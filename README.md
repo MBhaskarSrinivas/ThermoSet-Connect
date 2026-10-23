@@ -438,58 +438,6 @@ The project uses the ThingSpeak HTTP endpoint over TCP port 80.
 Important: ThingSpeak channel IDs, read API keys, write API keys, and Wi-Fi credentials must be configured correctly. Keep private credentials out of public repositories.
 
 ---
-
-📁 Project Directory Structure
-
-The repository contains the following source files, header files, and images.
-```
-project_major_ARM/
-│
-├── ARM_c_files/
-│   ├── adc.c
-│   ├── delay.c
-│   ├── esp01.c
-│   ├── i2c.c
-│   ├── i2c_eeprom.c
-│   ├── kpm.c
-│   ├── lcd.c
-│   ├── lm35.c
-│   ├── rtc.c
-│   ├── thermoset_fun_def.c
-│   ├── thermoset_main.c
-│   └── uart.c
-│
-├── ARM_h_files/
-│   ├── adc.h
-│   ├── adc_defines.h
-│   ├── defines.h
-│   ├── delay.h
-│   ├── esp01.h
-│   ├── esp01_defines.h
-│   ├── i2c.h
-│   ├── i2c_defines.h
-│   ├── i2c_eeprom.h
-│   ├── i2c_eeprom_defines.h
-│   ├── kpm.h
-│   ├── kpm_defines.h
-│   ├── lcd.h
-│   ├── lcd_defines.h
-│   ├── lm35.h
-│   ├── rtc.h
-│   ├── rtc_defines.h
-│   ├── thermoset.h
-│   ├── thermoset_defines.h
-│   ├── types.h
-│   ├── uart.h
-│   └── uart_defines.h
-│
-└── ARM_project_images/
-    ├── Block_diagram.jpg
-    ├── Channel_1.jpg
-    ├── Channel_2.jpg
-    └── ![ThermoSet Connect](Images/Project_circuit_connections.jpg)
-```
----
 **Source Files**
 
 |File| Responsibility|
