@@ -688,36 +688,22 @@ Improving the cloud data model so temperature, alert status, and set-point value
 
 This project provides practical experience with:
 
-ARM7 microcontroller programming
+1) ARM7 microcontroller programming
+2) Embedded C development
+3) ADC-based sensor interfacing
+4) Temperature measurement and threshold comparison
+5) UART communication
+6) ESP8266 AT commands
+7) Wi-Fi connectivity
+8) HTTP-based IoT communication
+9) ThingSpeak integration
+10) I²C communication
+11) External EEPROM data storage
+12) LCD and keypad interfacing
+13) RTC-based timekeeping
+14) Interrupt handling
+15) Embedded firmware modularization
+16) Local and remote configuration management
+17) Debugging embedded hardware and software
 
-Embedded C development
-
-ADC-based sensor interfacing
-
-Temperature measurement and threshold comparison
-
-UART communication
-
-ESP8266 AT commands
-
-Wi-Fi connectivity
-
-HTTP-based IoT communication
-
-ThingSpeak integration
-
-I²C communication
-
-External EEPROM data storage
-
-LCD and keypad interfacing
-
-RTC-based timekeeping
-
-Interrupt handling
-
-Embedded firmware modularization
-
-Local and remote configuration management
-
-Debugging embedded hardware and software
+**Thermoset- Connecting Embedded Temperature Monitoring with IoT** Built with Embedded C, ARM, ESP8266, ThingSpeak.
