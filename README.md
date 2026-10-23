@@ -51,20 +51,21 @@ The system also incorporates an RTC and keypad-based configuration menu for loca
 
 Project at a Glance
 
-Parameter| Description
-Project Name| ThermoSet
-Project Domain| Embedded Systems and Internet of Things
-Controller Family| ARM7 / LPC21xx
-Programming Language| Embedded C
-Temperature Sensor| LM35
-Wireless Communication| ESP8266 ESP-01
-Cloud Platform| ThingSpeak
-Persistent Storage| I²C EEPROM
-Display| Character LCD
-User Input| Keypad
-Timekeeping| RTC
-Alert Mechanism| Buzzer and LED
-Cloud Communication| ESP8266 AT commands over UART
+|Parameter| Description|
+|---|---|
+|Project Name| ThermoSet|
+|Project Domain| Embedded Systems and Internet of Things|
+|Controller Family| ARM7 / LPC21xx|
+|Programming Language| Embedded C|
+|Temperature Sensor| LM35|
+|Wireless Communication| ESP8266 ESP-01|
+|Cloud Platform| ThingSpeak|
+|Persistent Storage| I²C EEPROM|
+|Display| Character LCD|
+|User Input| Keypad|
+|Timekeeping| RTC|
+|Alert Mechanism| Buzzer and LED|
+|Cloud Communication| ESP8266 AT commands over UART|
 
 ---
 
@@ -233,18 +234,19 @@ The original project block diagram is available in the repository.
 
 The following components are used or referenced by the project firmware.
 
-Component| Purpose
-ARM7 LPC21xx microcontroller| Main controller and processing unit
-LM35 temperature sensor| Analog temperature measurement
-ESP8266 ESP-01 module| Wi-Fi connectivity and cloud communication
-AT24C256-compatible I²C EEPROM| Persistent set-point storage
-Character LCD| Temperature, time, and system status display
-Keypad| User input and configuration
-RTC| Timekeeping and date/time configuration
-Buzzer| Audible temperature alert
-LED| Visual temperature alert
-Power supply| Supplies the controller and connected modules
-Supporting components| Wiring, resistors, and interface circuitry as required
+|Component| Purpose|
+|---|---|
+|ARM7 LPC21xx microcontroller| Main controller and processing unit|
+|LM35 temperature sensor| Analog temperature measurement|
+|ESP8266 ESP-01 module| Wi-Fi connectivity and cloud communication|
+|AT24C256-compatible I²C EEPROM| Persistent set-point storage|
+|Character LCD| Temperature, time, and system status display|
+|Keypad| User input and configuration|
+|RTC| Timekeeping and date/time configuration|
+|Buzzer| Audible temperature alert|
+|LED| Visual temperature alert|
+|Power supply| Supplies the controller and connected modules|
+|Supporting components| Wiring, resistors, and interface circuitry as required|
 
 ![ThermoSet Connect](Images/Project_circuit_connections.jpg)
 
@@ -485,8 +487,9 @@ project_major_ARM/
     ├── Block_diagram.jpg
     ├── Channel_1.jpg
     ├── Channel_2.jpg
-    └── Project_circuit_connections.jpg
+    └── ![ThermoSet Connect](Images/Project_circuit_connections.jpg)
 
+---
 **Source Files**
 
 |File| Responsibility|
@@ -508,7 +511,7 @@ The corresponding header files provide function declarations, type definitions, 
 
 ---
 
-🔌 Hardware Connections
+**🔌 Hardware Connections**
 
 The following image is included with the project files.
 
@@ -516,15 +519,16 @@ The following image is included with the project files.
 
 Interface Overview
 
-Interface| Connected Device| Purpose
-ADC| LM35| Temperature acquisition
-UART| ESP8266 ESP-01| Wi-Fi and cloud communication
-I²C| EEPROM| Persistent set-point storage
-LCD interface| Character LCD| Display and status information
-Keypad interface| Keypad| Local configuration
-RTC interface| RTC hardware| Timekeeping
-GPIO| Buzzer and LED| Temperature alerts
-External interrupt| Local configuration input| Opens the configuration menu
+|Interface| Connected Device| Purpose|
+|---|---|---|
+|ADC| LM35| Temperature acquisition|
+|UART| ESP8266 ESP-01| Wi-Fi and cloud communication|
+|I²C| EEPROM| Persistent set-point storage|
+|LCD interface| Character LCD| Display and status information|
+|Keypad interface| Keypad| Local configuration|
+|RTC interface| RTC hardware| Timekeeping|
+|GPIO| Buzzer and LED| Temperature alerts|
+|External interrupt| Local configuration input| Opens the configuration menu|
 
 Refer to the circuit connection image and the pin definitions in the header files when wiring the hardware.
 
@@ -532,7 +536,7 @@ Electrical compatibility: Check the controller's voltage requirements and the ES
 
 ---
 
-🛠️ Configuration and Setup
+**🛠️ Configuration and Setup**
 
 The following steps describe the main configuration requirements based on the project firmware.
 
@@ -622,7 +626,7 @@ A valid remote set-point is retrieved and applied.
 
 The exact flashing procedure depends on the controller board and development tools being used.
 
-⌨️ User Interface and Controls
+**⌨️ User Interface and Controls**
 
 The firmware implements a keypad-based configuration menu.
 
@@ -666,7 +670,7 @@ The local configuration menu is entered through the configured external interrup
 
 The exact physical key mapping should be verified against the keypad driver and the hardware wiring.
 
-🖼️ Project Images
+**🖼️ Project Images**
 
 1. Hardware and Circuit Connections
 
@@ -682,7 +686,7 @@ The exact physical key mapping should be verified against the keypad driver and 
 
 These images document the project circuit, system architecture, and ThingSpeak monitoring interface.
 
-🌍 Applications
+**🌍 Applications**
 
 ThermoSet demonstrates concepts that can be adapted to several temperature monitoring applications, including:
 
@@ -702,7 +706,7 @@ IoT-based monitoring experiments
 
 The current implementation is a prototype and should not be treated as a certified safety or industrial control system without additional validation.
 
-🚀 Limitations and Future Improvements
+**🚀 Limitations and Future Improvements**
 
 The current implementation provides a foundation for embedded temperature monitoring and IoT integration.
 
@@ -732,7 +736,7 @@ Adding automated tests for configuration and communication logic.
 
 Improving the cloud data model so temperature, alert status, and set-point values are clearly separated.
 
-🎓 Learning Outcomes
+**🎓 Learning Outcomes**
 
 This project provides practical experience with:
 
