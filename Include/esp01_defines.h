@@ -1,14 +1,14 @@
-#define WIFI_SSID       "redmi"
-#define WIFI_PASSWORD   "password1234"
+#define WIFI_SSID       "XXXXXXXXXXXX"//your hotspot id
+#define WIFI_PASSWORD   "XXXXXXXXXXXX"//your password
 #define BUFFER_SIZE     350
 
-#define TS1_WRITE_API_KEY  "4HXEJOHDQQSP5274"
-#define TS1_READ_API_KEY   "P2MZ8TW4B6WJFQL4"
-#define TS1_CHANNEL_ID     "3533659"
+#define TS1_WRITE_API_KEY  "XXXXXXXXXXXX"//channel-1 write api
+#define TS1_READ_API_KEY   "XXXXXXXXXXXX"//channel-1 read api
+#define TS1_CHANNEL_ID     "XXXXXXXXXXXX"//channel - 1 id
 
-#define TS2_WRITE_API_KEY  "BMWGW0FBM67MK00M"
-#define TS2_READ_API_KEY   "32WLKCC5IW3W3N42"
-#define TS2_CHANNEL_ID     "3536255"
+#define TS2_WRITE_API_KEY  "XXXXXXXXXXXX"//channel-2 write api
+#define TS2_READ_API_KEY   "XXXXXXXXXXXX"//channel-2 read api
+#define TS2_CHANNEL_ID     "XXXXXXXXXXXX"//channel - 2 id
 
 #define TS_HOST            "184.106.153.149"
 
