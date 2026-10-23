@@ -559,3 +559,242 @@ Conceptually, the configuration includes:
 #define TS2_CHANNEL_ID     "YOUR_CHANNEL_2_ID"
 
 The first channel is used for temperature and alert uploads. The second c
+
+
+4. Configure the ThingSpeak Fields
+
+Create or configure the two ThingSpeak channels.
+
+Channel 1:
+
+Field 1: Temperature
+
+Field 2: Alert Status
+
+Channel 2:
+
+Field 1: Remote Set-Point
+
+The field names displayed on ThingSpeak should match the values actually uploaded by the firmware.
+
+5. Configure the Hardware
+
+Connect the controller, LM35 sensor, LCD, keypad, RTC, EEPROM, ESP-01, buzzer, and LED according to the circuit diagram and the relevant header-file definitions.
+
+Verify the power supply, grounding, communication wiring, and voltage compatibility.
+
+6. Configure the Embedded Development Environment
+
+The project source files target the LPC21xx controller family and include the device-specific header:
+
+#include <LPC21xx.h>
+
+Use a compatible ARM7/LPC21xx development toolchain and the appropriate device support files.
+
+The repository contains the C source and header files, but a complete build configuration and all toolchain-specific project files are not established by the supplied source archive.
+
+You may need to configure the compiler, linker, startup code, memory layout, and target device in your development environment before building the firmware.
+
+7. Build and Flash the Firmware
+
+Build the project for the correct microcontroller variant, resolve any toolchain-specific configuration requirements, and program the resulting firmware onto the controller using compatible hardware.
+
+8. Verify the System
+
+After powering up the system, verify that:
+
+The LCD initializes.
+
+The current temperature is displayed.
+
+The stored set-point is loaded.
+
+The buzzer and LED respond to threshold changes.
+
+The keypad configuration menu operates.
+
+The ESP-01 connects to Wi-Fi.
+
+Temperature and alert values appear in ThingSpeak.
+
+A valid remote set-point is retrieved and applied.
+
+The exact flashing procedure depends on the controller board and development tools being used.
+
+⌨️ User Interface and Controls
+
+The firmware implements a keypad-based configuration menu.
+
+The menu includes options for:
+
+Menu Option
+
+Function
+
+1
+
+Configure time
+
+2
+
+Configure date
+
+3
+
+Configure temperature set-point
+
+N
+
+Navigate to the next menu page
+
+4
+
+View the previous set-point
+
+P
+
+Return to the previous menu page
+
+C
+
+Exit the configuration menu
+
+The numeric configuration routines also use navigation and cancellation inputs.
+
+The local configuration menu is entered through the configured external interrupt input.
+
+The exact physical key mapping should be verified against the keypad driver and the hardware wiring.
+
+🖼️ Project Images
+
+1. Hardware and Circuit Connections
+
+
+
+2. ThingSpeak Temperature Monitoring
+
+
+
+3. ThingSpeak Second Channel
+
+
+
+4. System Block Diagram
+
+
+
+These images document the project circuit, system architecture, and ThingSpeak monitoring interface.
+
+🌍 Applications
+
+ThermoSet demonstrates concepts that can be adapted to several temperature monitoring applications, including:
+
+Room temperature monitoring
+
+Laboratory temperature observation
+
+Educational IoT demonstrations
+
+Embedded temperature alarm systems
+
+Environmental monitoring prototypes
+
+Remote temperature threshold management
+
+IoT-based monitoring experiments
+
+The current implementation is a prototype and should not be treated as a certified safety or industrial control system without additional validation.
+
+🚀 Limitations and Future Improvements
+
+The current implementation provides a foundation for embedded temperature monitoring and IoT integration.
+
+Possible future improvements include:
+
+Adding sensor calibration and temperature filtering.
+
+Improving error handling and reconnection logic for Wi-Fi failures.
+
+Adding authentication and secure communication using supported TLS capabilities.
+
+Improving the handling of malformed or incomplete cloud responses.
+
+Adding cloud-side visualization of temperature history and alert events.
+
+Adding additional sensors for humidity or environmental monitoring.
+
+Introducing configuration options for alert thresholds and cloud reporting intervals.
+
+Improving date validation, including month lengths and leap years.
+
+Adding a documented build configuration for reproducible firmware compilation.
+
+Separating private credentials from source code.
+
+Adding automated tests for configuration and communication logic.
+
+Improving the cloud data model so temperature, alert status, and set-point values are clearly separated.
+
+🎓 Learning Outcomes
+
+This project provides practical experience with:
+
+ARM7 microcontroller programming
+
+Embedded C development
+
+ADC-based sensor interfacing
+
+Temperature measurement and threshold comparison
+
+UART communication
+
+ESP8266 AT commands
+
+Wi-Fi connectivity
+
+HTTP-based IoT communication
+
+ThingSpeak integration
+
+I²C communication
+
+External EEPROM data storage
+
+LCD and keypad interfacing
+
+RTC-based timekeeping
+
+Interrupt handling
+
+Embedded firmware modularization
+
+Local and remote configuration management
+
+Debugging embedded hardware and software
+
+👨‍💻 Author
+
+Your Name
+
+Embedded Systems | ARM Microcontrollers | Internet of Things
+
+GitHub: YOUR_GITHUB_USERNAME
+
+Replace the placeholders above with your own details before publishing.
+
+🙏 Acknowledgements
+
+This project was developed as an academic major project using embedded systems and IoT concepts.
+
+Thanks to everyone who contributed guidance, technical assistance, and support during the development and testing of the project.
+
+📄 License
+
+No license has been specified for this repository.
+
+If you intend to make the source code available for reuse, consider selecting an appropriate open-source license and adding the corresponding LICENSE file.
+
+Until a license is added, do not assume that others have permission to reuse, modify, or redistribute the code.
+
+
